@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | OpenMediaHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #1e1e2f;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #2a2a3d;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 30px;
+        }
+
+        .tabs a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .tabs a:hover {
+            background-color: #3e3e50;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .divider {
+            height: 20px;
+            width: 1px;
+            background-color: #fff;
+        }
+
+        .social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content {
+            margin-top: 150px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .title {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #cfcfcf;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #3e3e50;
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            color: #fff;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card i {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-style: normal; /* Ensures no italics */
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #cfcfcf;
+            font-style: normal; /* Ensures no italics */
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            pointer-events: none; /* Disable link interaction */
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="tabs">
+            <br>
+            <a href="home.html">Home</a>
+            <a href="guide.html">Guide</a> 
+            <a href="forums.html">Forums</a>
+            <a href="requests.html">Requests</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="social">
+            <div class="divider"></div>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://reddit.com" target="_blank"><i class="fab fa-reddit"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
+            <br>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="title">OpenMediaHub</div>
+        <div class="description">Breaking Barriers, Giving Everyone Access to Free Media Beyond Corporate Control.</div>
+        <div class="card-container">
+            <div onclick="window.location='pages/ai.html'" class="card">
+                <i class="fas fa-robot"></i>
+                <div class="card-title">Artificial Intelligence</div>
+                <div class="card-description">Explore the power of AI.</div>
+            </div>
+            <div onclick="window.location='pages/movies.html'" class="card">
+                <i class="fas fa-film"></i>
+                <div class="card-title">Movies</div>
+                <div class="card-description">Dive into the world of cinema.</div>
+            </div>
+            <div onclick="window.location='pages/music.html'" class="card">
+                <i class="fas fa-music"></i>
+                <div class="card-title">Music</div>
+                <div class="card-description">Immerse yourself in the rhythm of sound.</div>
+            </div>
+            <div onclick="window.location='pages/games.html'" class="card">
+                <i class="fas fa-gamepad"></i>
+                <div class="card-title">Games</div>
+                <div class="card-description">Explore the limitless realms of gaming.</div>
+            </div>
+            <div onclick="window.location='pages/books.html'" class="card">
+                <i class="fas fa-book"></i>
+                <div class="card-title">Books</div>
+                <div class="card-description">Unlock a world of stories and knowledge.</div>
+            </div>
+            <div onclick="window.location='pages/downloads.html'" class="card">
+                <i class="fas fa-download"></i>
+                <div class="card-title">Downloads</div>
+                <div class="card-description">Download essential software and tools effortlessly.</div>
+            </div>
+            <div onclick="window.location='pages/mobile.html'" class="card">
+                <i class="fas fa-mobile-alt"></i>
+                <div class="card-title">iOS / Android</div>
+                <div class="card-description">Experience the best of iOS and Android in one place.</div>
+            </div>
+            <div onclick="window.location='pages/os.html'" class="card">
+                <i class="fas fa-terminal"></i>
+                <div class="card-title">Linux / macOS</div>
+                <div class="card-description">Experience the flexibility of Linux and the elegance of macOS.</div>
+            </div>
+            <div onclick="window.location='pages/nec.html'" class="card">
+                <i class="fas fa-earth"></i>
+                <div class="card-title">Non-English Content</div>
+                <div class="card-description">Access a diverse collection of non-English content and resources.</div>
+            </div>
+            <div onclick="window.location='pages/misc.html'" class="card">
+                <i class="fas fa-folder"></i>
+                <div class="card-title">Miscellanous</div>
+                <div class="card-description">Explore a variety of miscellaneous tools and resources.</div>
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+</html>
